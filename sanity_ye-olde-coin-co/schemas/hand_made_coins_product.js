@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'hand_made_coins_product',
+    title: 'Hand Made Coins - Dark Ages to Renaissance, circa 500 AD - 1650 AD Product',
     type: 'document',
     fields: [
         {

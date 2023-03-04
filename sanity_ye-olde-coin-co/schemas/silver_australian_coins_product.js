@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'silver_australian_coins_product',
+    title: 'Silver Australian coins 1910-1966 Product',
     type: 'document',
     fields: [
         {

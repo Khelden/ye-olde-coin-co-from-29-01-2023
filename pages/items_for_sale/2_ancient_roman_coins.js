@@ -1,10 +1,8 @@
-
 import React from 'react'
 import { client } from '../../lib/client'
 import Roman from '../../components/AncientRomanCoinCard'
 
 export default function Shop( { ancient_roman_coin_products } ) {
-    console.log(ancient_roman_coin_products)
     return (
         <section className="showcase" id="home">
             <link rel="stylesheet" href="./css/style.css" />
@@ -28,3 +26,5 @@ export const getServerSideProps = async () => {
       props: { ancient_roman_coin_products }
     }
   }
+
+  

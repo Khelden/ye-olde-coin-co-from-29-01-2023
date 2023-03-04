@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'australian_historical_medals_product',
+    title: 'Australian Historical Medals & Medallions, c1788 - 20th century Product',
     type: 'document',
     fields: [
         {

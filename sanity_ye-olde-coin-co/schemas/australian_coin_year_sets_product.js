@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'australian_coin_year_sets_product',
+    title: 'Australian Coin Year Sets, 1910 to 2000 Product',
     type: 'document',
     fields: [
         {

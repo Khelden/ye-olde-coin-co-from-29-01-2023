@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'australian_pre_decimal_and_decimal_product',
+    title: 'Australian Pre-Decimal & Decimal BANKNOTES 1910s-1990s Product',
     type: 'document',
     fields: [
         {

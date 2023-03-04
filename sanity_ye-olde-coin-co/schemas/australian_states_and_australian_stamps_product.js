@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'australian_states_and_australian_stamps_product',
+    title: 'Australian States & Australian STAMPS, 1850 to 1990 Product',
     type: 'document',
     fields: [
         {

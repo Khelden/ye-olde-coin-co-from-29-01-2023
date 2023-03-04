@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'british_machine_made_or_milled_coin_product',
+    title: 'British Machine Made or Milled coins circa 1650 - 1950 AD Product',
     type: 'document',
     fields: [
         {

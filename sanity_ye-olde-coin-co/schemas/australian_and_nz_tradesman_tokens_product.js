@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'australian_and_nz_tradesman_tokens_product',
+    title: 'Australian & NZ Tradesman Tokens Product',
     type: 'document',
     fields: [
         {

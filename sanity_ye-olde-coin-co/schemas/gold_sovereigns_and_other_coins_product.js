@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'gold_sovereigns_and_other_coins_product',
+    title: 'Gold Sovereigns & other Gold and Silver bulk coins',
     type: 'document',
     fields: [
         {

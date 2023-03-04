@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'coin_and_stamp_books_albums_product',
+    title: 'Coin & Stamp Books, Albums and Accessories Product',
     type: 'document',
     fields: [
         {

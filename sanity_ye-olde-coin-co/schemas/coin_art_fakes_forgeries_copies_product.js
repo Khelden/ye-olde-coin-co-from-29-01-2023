@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'coin_art_forgeries_copies_product',
+    title: 'Coin Art, Fakes, Forgeries, Copies, Errors, Mis-strikes Product',
     type: 'document',
     fields: [
         {

@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'colonial_proclamation_and_convict_coins_product',
+    title: 'Colonial, Proclamation and Convict coins c1650 - 1853 Product',
     type: 'document',
     fields: [
         {

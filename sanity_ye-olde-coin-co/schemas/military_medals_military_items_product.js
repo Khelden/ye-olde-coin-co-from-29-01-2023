@@ -1,6 +1,6 @@
 export default {
-    name: 'product',
-    title: 'Ancient Coins, Greek and Other Cultures, c 500 BC to 1000 AD Product',
+    name: 'military_medals_military_items_product',
+    title: 'Military Medals and Military Related Items, circa 1900-1990s Product',
     type: 'document',
     fields: [
         {
