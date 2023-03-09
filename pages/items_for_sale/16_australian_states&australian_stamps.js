@@ -1,8 +1,8 @@
 import React from 'react'
 import { client } from '../../lib/client'
-import Product from '../../components/ProductCard'
+import AustralianStatesStampsCard from '../../components/AustralianStatesStampsCard'
 
-export default function Shop( ) {
+export default function Shop({ australian_states_and_australian_stamps_products }) {
     return (
         <section className="showcase" id="home">
             <link rel="stylesheet" href="./css/style.css" />
@@ -11,16 +11,17 @@ export default function Shop( ) {
             <h1 className="showcase_title title title-main">Australian States & Australian STAMPS, 1850 to 1990</h1>
             </div>
             <div className="shop-list">
+            {australian_states_and_australian_stamps_products?.map((australian_states_and_australian_stamps_product) => <AustralianStatesStampsCard key={australian_states_and_australian_stamps_product._id} australian_states_and_australian_stamps_product={australian_states_and_australian_stamps_product}/> )}
             </div>
         </section>
     )
 }
 
 export const getServerSideProps = async () => {
-    const query = '*[_type == "product"]';
-    const products = await client.fetch(query);
+    const query = '*[_type == "australian_states_and_australian_stamps_product"]';
+    const australian_states_and_australian_stamps_products = await client.fetch(query);
   
     return {
-      props: { products }
+      props: { australian_states_and_australian_stamps_products }
     }
   }

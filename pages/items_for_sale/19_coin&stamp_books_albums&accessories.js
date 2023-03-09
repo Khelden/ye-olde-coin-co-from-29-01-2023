@@ -1,8 +1,8 @@
 import React from 'react'
 import { client } from '../../lib/client'
-import Product from '../../components/ProductCard'
+import CoinStampBooksAlbumsAccessoriesCard from '../../components/CoinStampBooksAlbumsAccessoriesCard'
 
-export default function Shop( ) {
+export default function Shop({ coin_and_stamp_books_albums_products }) {
     return (
         <section className="showcase" id="home">
             <link rel="stylesheet" href="./css/style.css" />
@@ -11,16 +11,17 @@ export default function Shop( ) {
             <h1 className="showcase_title title title-main">Coin & stamp books, albums and accessories</h1>
             </div>
             <div className="shop-list">
+                {coin_and_stamp_books_albums_products?.map((coin_and_stamp_books_albums_product) => <CoinStampBooksAlbumsAccessoriesCard key={coin_and_stamp_books_albums_product._id} coin_and_stamp_books_albums_product={coin_and_stamp_books_albums_product}/> )}
             </div>
         </section>
     )
 }
 
 export const getServerSideProps = async () => {
-    const query = '*[_type == "product"]';
-    const products = await client.fetch(query);
+    const query = '*[_type == "coin_and_stamp_books_albums_product"]';
+    const coin_and_stamp_books_albums_products = await client.fetch(query);
   
     return {
-      props: { products }
+      props: { coin_and_stamp_books_albums_products }
     }
   }

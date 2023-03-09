@@ -4,7 +4,7 @@ import product from './product'
 import ancient_roman_coin_product from './ancient_roman_coins_product'
 import roman_and_byzantine_coins_product from './roman&byzantine_coins_product'
 import hand_made_coins_product from './hand_made_coins_product'
-import british_machine_made_or_milled_coins_product from './british_machine_made_or_milled_coins_product'
+import British_machine_made_or_milled_coins_product from './\'british_machine_made_or_milled_coins_product\''
 import colonial_proclamation_and_convict_coins_product from './colonial_proclamation_and_convict_coins_product'
 import gb_and_world_historical_medals_product from './gb_and_world_historical_medals_product'
 import gold_sovereigns_and_other_coins_product from './gold_sovereigns_and_other_coins_product'
@@ -33,7 +33,7 @@ export default createSchema({
                             ancient_roman_coin_product,
                             roman_and_byzantine_coins_product,
                             hand_made_coins_product,
-                            british_machine_made_or_milled_coins_product,
+                            British_machine_made_or_milled_coins_product,
                             colonial_proclamation_and_convict_coins_product,
                             gb_and_world_historical_medals_product,
                             gold_sovereigns_and_other_coins_product,

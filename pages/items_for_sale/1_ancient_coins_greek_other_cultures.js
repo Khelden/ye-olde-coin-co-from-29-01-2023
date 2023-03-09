@@ -1,10 +1,8 @@
-
 import React from 'react'
 import { client } from '../../lib/client'
 import Product from '../../components/ProductCard'
 
 export default function Shop({ products }) {
-    console.log(products)
     return (
         <section className="showcase" id="home">
             <link rel="stylesheet" href="./css/style.css" />

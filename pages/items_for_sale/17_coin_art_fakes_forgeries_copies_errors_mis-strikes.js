@@ -1,8 +1,8 @@
 import React from 'react'
 import { client } from '../../lib/client'
-import Product from '../../components/ProductCard'
+import CoinArtForgeriesCopiesCard from '../../components/CoinArtForgeriesCopiesCard'
 
-export default function Shop( ) {
+export default function Shop({ coin_art_forgeries_copies_products }) {
     return (
         <section className="showcase" id="home">
             <link rel="stylesheet" href="./css/style.css" />
@@ -11,16 +11,17 @@ export default function Shop( ) {
             <h1 className="showcase_title title title-main">Coin Art, Fakes, Forgeries, Copies, Errors, Mis-strikes</h1>
             </div>
             <div className="shop-list">
+                {coin_art_forgeries_copies_products?.map((coin_art_forgeries_copies_product) => <CoinArtForgeriesCopiesCard key={coin_art_forgeries_copies_product._id} coin_art_forgeries_copies_product={coin_art_forgeries_copies_product}/> )}
             </div>
         </section>
     )
 }
 
 export const getServerSideProps = async () => {
-    const query = '*[_type == "product"]';
-    const products = await client.fetch(query);
+    const query = '*[_type == "coin_art_forgeries_copies_product"]';
+    const coin_art_forgeries_copies_products = await client.fetch(query);
   
     return {
-      props: { products }
+      props: { coin_art_forgeries_copies_products }
     }
   }

@@ -1,8 +1,8 @@
 import React from 'react'
 import { client } from '../../lib/client'
-import Product from '../../components/ProductCard'
+import ColonialProclamationCard from '../../components/ColonialProclamationCard'
 
-export default function Shop( ) {
+export default function Shop( { colonial_proclamation_and_convict_coins_products } ) {
     return (
         <section className="showcase" id="home">
             <link rel="stylesheet" href="./css/style.css" />
@@ -11,16 +11,17 @@ export default function Shop( ) {
             <h1 className="showcase_title title title-main">Colonial, Proclamation and Convict coins c1650 - 1853</h1>
             </div>
             <div className="shop-list">
+                {colonial_proclamation_and_convict_coins_products?.map((colonial_proclamation_and_convict_coins_product) => <ColonialProclamationCard key={colonial_proclamation_and_convict_coins_product._id} colonial_proclamation_and_convict_coins_product={colonial_proclamation_and_convict_coins_product}/> )}
             </div>
         </section>
     )
 }
 
 export const getServerSideProps = async () => {
-    const query = '*[_type == "product"]';
-    const products = await client.fetch(query);
+    const query = '*[_type == "colonial_proclamation_and_convict_coins_product"]';
+    const colonial_proclamation_and_convict_coins_products = await client.fetch(query);
   
     return {
-      props: { products }
+      props: { colonial_proclamation_and_convict_coins_products }
     }
   }
